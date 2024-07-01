@@ -4,7 +4,8 @@
   "description": "Urql exchange to support file uploads to an (Elixir) Absinthe backend",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && babel dist --out-dir dist --extensions \".js\"",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
