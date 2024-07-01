@@ -2,11 +2,16 @@
   "name": "urql-absinthe-upload-exchange",
   "version": "1.0.0",
   "description": "Urql exchange to support file uploads to an (Elixir) Absinthe backend",
-  "main": "src/index.ts",
   "scripts": {
-    "build": "tsc && babel dist --out-dir dist --extensions \".js\"",
+    "build": "tsc && babel src --out-dir dist --extensions \".ts\"",
     "prepare": "npm run build"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/9to5/urql-absinthe-upload-exchange.git"
