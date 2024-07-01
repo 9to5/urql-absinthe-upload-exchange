@@ -1,6 +1,6 @@
 {
   "name": "urql-absinthe-upload-exchange",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Urql exchange to support file uploads to an (Elixir) Absinthe backend",
   "scripts": {
     "build:mjs": "babel src --out-dir dist/esm --extensions \".ts\" --out-file-extension .mjs",
