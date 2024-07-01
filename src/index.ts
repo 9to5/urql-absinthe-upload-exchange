@@ -223,7 +223,7 @@ const createFetchSource = (operation: Operation, shouldUseGet: boolean) => {
 const isOperationFetchable = (operation: Operation) =>
   operation.kind === "query" || operation.kind === "mutation";
 
-export const absintheMultipartFetchExchange: Exchange =
+export const absintheUploadExchange: Exchange =
   ({ forward }) =>
   (ops$) => {
     const sharedOps$ = share(ops$);
