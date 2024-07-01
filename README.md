@@ -14,7 +14,7 @@ Add the exchange to your urql client, right before the fetch exchange:
 
 ```javascript
 import { createClient, dedupExchange, cacheExchange, fetchExchange } from 'urql';
-import { absintheUploadExchange } from 'urql-absinthe-upload-exchange';
+import absintheUploadExchange from 'urql-absinthe-upload-exchange';
 
 const client = createClient({
   url: 'http://localhost:4000/graphql',

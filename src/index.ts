@@ -223,7 +223,7 @@ const createFetchSource = (operation: Operation, shouldUseGet: boolean) => {
 const isOperationFetchable = (operation: Operation) =>
   operation.kind === "query" || operation.kind === "mutation";
 
-export const absintheUploadExchange: Exchange =
+const absintheUploadExchange: Exchange =
   ({ forward }) =>
   (ops$) => {
     const sharedOps$ = share(ops$);
@@ -258,3 +258,5 @@ export const absintheUploadExchange: Exchange =
 
     return merge([fetchResults$, forward$]);
   };
+
+export default absintheUploadExchange;
