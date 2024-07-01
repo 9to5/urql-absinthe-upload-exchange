@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.0.0...v1.1.0) (2024-07-01)
+
+
+### Features
+
+* trigger semantic release ([91560e7](https://github.com/9to5/urql-absinthe-upload-exchange/commit/91560e7972d286f6aeaaeb106a62d50642479cf8))
+
 # 1.0.0 (2024-07-01)
 
 
