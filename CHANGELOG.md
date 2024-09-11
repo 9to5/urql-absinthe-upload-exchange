@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.1.0...v1.2.0) (2024-09-11)
+
+
+### Features
+
+* **release:** trigger release ([a86b87c](https://github.com/9to5/urql-absinthe-upload-exchange/commit/a86b87c116e1cc6598d48e19a94baeda05e44369))
+
 # [1.1.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.0.0...v1.1.0) (2024-07-01)
 
 
