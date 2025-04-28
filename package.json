@@ -4,35 +4,21 @@
   "description": "Urql exchange to support file uploads to an (Elixir) Absinthe backend",
   "scripts": {
     "build:mjs": "babel src --out-dir dist/esm --extensions \".ts\" --out-file-extension .mjs",
-    "build:js": "babel src --out-dir dist/cjs --extensions \".ts\" --out-file-extension .cjs --plugins \"@babel/plugin-transform-modules-commonjs\"",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:types:cjs": "tsc --project tsconfig.cjs.json --emitDeclarationOnly",
-    "build": "npm run build:mjs && npm run build:js && npm run build:types && npm run build:types:cjs",
+    "build": "npm run build:mjs && npm run build:types",
     "prepare": "npm run build"
   },
   "files": [
     "dist"
   ],
   "type": "module",
-  "main": "dist/cjs/index.cjs",
+  "main": "dist/esm/index.mjs",
   "module": "dist/esm/index.mjs",
   "types": "dist/types/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "dist/types/index.d.ts"
-      ]
-    }
-  },
   "exports": {
     ".": {
-      "types": {
-        "import": "./dist/types/index.d.ts",
-        "require": "./dist/cjs/types/index.d.cts",
-        "default": "./dist/types/index.d.ts"
-      },
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.cjs",
       "default": "./dist/esm/index.mjs"
     }
   },

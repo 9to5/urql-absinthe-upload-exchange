@@ -7,11 +7,13 @@
 
 Urql exchange to support file uploads to an (Elixir) Absinthe backend
 
+> **BREAKING CHANGE in v2.0.0**: This package is now ESM-only. CommonJS support has been removed.
+
 ## Features
 
 - 📁 File upload support for urql GraphQL client
 - 🔄 Compatible with Absinthe backends (Phoenix/Elixir)
-- ✅ Support for both ESM and CommonJS imports
+- 📦 Pure ESM package
 - 🔍 TypeScript type definitions included
 
 ## Requirements
