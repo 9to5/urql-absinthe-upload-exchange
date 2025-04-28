@@ -1,3 +1,26 @@
+# [2.0.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.3.0...v2.0.0) (2025-04-28)
+
+
+### breaking
+
+* convert to ESM-only package ([05bd2f3](https://github.com/9to5/urql-absinthe-upload-exchange/commit/05bd2f335c2910e0a9706f519fb049d7978c67ab))
+
+
+### Bug Fixes
+
+* remove old cjs files ([1580af5](https://github.com/9to5/urql-absinthe-upload-exchange/commit/1580af5777cdd31cd01d7aa5865eccbeb93d9ddc))
+
+
+### Features
+
+* fix cjs and esm type separation ([1e84a3e](https://github.com/9to5/urql-absinthe-upload-exchange/commit/1e84a3e5a6ec8c5034dcbd4244939f9cca84119d))
+
+
+### BREAKING CHANGES
+
+* Remove CommonJS support completely. This package is now ESM-only
+and requires Node.js >= 18.0.0. Users will need to use import syntax instead of require.
+
 # [1.3.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.2.0...v1.3.0) (2025-04-28)
 
 
