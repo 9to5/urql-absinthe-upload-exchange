@@ -1,27 +1,39 @@
 {
   "name": "urql-absinthe-upload-exchange",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Urql exchange to support file uploads to an (Elixir) Absinthe backend",
   "scripts": {
     "build:mjs": "babel src --out-dir dist/esm --extensions \".ts\" --out-file-extension .mjs",
-    "build:js": "babel src --out-dir dist/cjs --extensions \".ts\" --out-file-extension .js --plugins \"@babel/plugin-transform-modules-commonjs\"",
+    "build:js": "babel src --out-dir dist/cjs --extensions \".ts\" --out-file-extension .cjs --plugins \"@babel/plugin-transform-modules-commonjs\"",
     "build:types": "tsc --emitDeclarationOnly",
-    "build": "npm run build:mjs && npm run build:js && npm run build:types",
+    "build:types:cjs": "tsc --project tsconfig.cjs.json --emitDeclarationOnly",
+    "build": "npm run build:mjs && npm run build:js && npm run build:types && npm run build:types:cjs",
     "prepare": "npm run build"
   },
   "files": [
     "dist"
   ],
   "type": "module",
-  "main": "dist/cjs/index.js",
+  "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.mjs",
   "types": "dist/types/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/types/index.d.ts"
+      ]
+    }
+  },
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": {
+        "import": "./dist/types/index.d.ts",
+        "require": "./dist/cjs/types/index.d.cts",
+        "default": "./dist/types/index.d.ts"
+      },
       "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/cjs/index.js"
+      "require": "./dist/cjs/index.cjs",
+      "default": "./dist/esm/index.mjs"
     }
   },
   "engines": {

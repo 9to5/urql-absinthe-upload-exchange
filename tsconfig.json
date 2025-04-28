@@ -4,10 +4,15 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
     "outDir": "./dist/types",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": [
     "src/**/*"
