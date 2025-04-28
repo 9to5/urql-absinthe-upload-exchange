@@ -1,0 +1,31 @@
+# Source files
+src/
+
+# Tests
+__tests__/
+coverage/
+*.test.*
+jest.config.*
+
+# Configuration files
+.github/
+.git/
+.gitignore
+.tool-versions
+tsconfig.json
+babel.config.json
+release.config.js
+.npmrc
+
+# Build artifacts and logs
+*.log
+.DS_Store
+
+# Editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Allow dist/ to be published (already specified in package.json "files")
+!dist/
