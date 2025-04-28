@@ -1,3 +1,22 @@
+# [1.3.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.2.0...v1.3.0) (2025-04-28)
+
+
+### Bug Fixes
+
+* downgrade semantic-release versions to fix CI ([1dfcace](https://github.com/9to5/urql-absinthe-upload-exchange/commit/1dfcace4e12c3644bf2f6e6484f5f775e44b883b))
+* pin semantic-release to v21.1.2 to fix CI error ([550fa15](https://github.com/9to5/urql-absinthe-upload-exchange/commit/550fa156f134a080d74380808c8ed502a8e7ddcf))
+* re-generate pnpm-lock.yaml ([bcce299](https://github.com/9to5/urql-absinthe-upload-exchange/commit/bcce299e7b28b83dda7601c8f9ed106ab8fd72e2))
+* resolve invalid date error in semantic-release ([cb62519](https://github.com/9to5/urql-absinthe-upload-exchange/commit/cb625193b338af24e297045e3ae2ae464f599dc2))
+* update release config for ESM compatibility ([a97d31c](https://github.com/9to5/urql-absinthe-upload-exchange/commit/a97d31cc74be19b335ba2ed13f0a639eb44d664f))
+
+
+### Features
+
+* fix module format and improve package configuration ([2ed53cf](https://github.com/9to5/urql-absinthe-upload-exchange/commit/2ed53cfae47c8f1c73e7918d2e7273ddc96d5103))
+* fix module format to support both CommonJS and ESM properly ([0d71cc7](https://github.com/9to5/urql-absinthe-upload-exchange/commit/0d71cc70e8a686ef3f40e127600f6e6cbfc29ff1))
+* set node version to 18 ([48f31da](https://github.com/9to5/urql-absinthe-upload-exchange/commit/48f31da82e97616a14549f043fb442f93b904c29))
+* Update CI workflow to use pnpm ([853dc7a](https://github.com/9to5/urql-absinthe-upload-exchange/commit/853dc7af2600fb28508d59a8e1e4013bdbd9cb74))
+
 # [1.2.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.1.0...v1.2.0) (2024-09-11)
 
 
