@@ -4,8 +4,26 @@
       "@babel/preset-env",
       {
         "modules": false,
+        "targets": {
+          "node": "14",
+          "browsers": ">0.25%, not dead"
+        }
       }
     ],
     "@babel/preset-typescript"
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  }
 }
