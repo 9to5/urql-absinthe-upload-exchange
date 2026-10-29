@@ -44,21 +44,21 @@
   },
   "homepage": "https://github.com/9to5/urql-absinthe-upload-exchange#readme",
   "devDependencies": {
-    "@babel/cli": "^7.27.0",
-    "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9",
-    "@babel/preset-typescript": "^7.27.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^10.3.5",
-    "@semantic-release/npm": "^12.0.1",
-    "@types/node": "^22.15.19",
-    "semantic-release": "^25.0.5",
-    "typescript": "^5.8.3"
+    "@babel/cli": "^8.0.6",
+    "@babel/core": "^8.0.9",
+    "@babel/preset-env": "^8.0.7",
+    "@babel/preset-typescript": "^8.0.7",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/git": "^11.0.1",
+    "@semantic-release/github": "^12.0.10",
+    "@semantic-release/npm": "^13.2.0",
+    "@types/node": "^26.6.6",
+    "@urql/core": "^6.0.3",
+    "graphql": "^16.14.2",
+    "semantic-release": "^25.0.9",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@urql/core": "^6.0.1",
-    "graphql": "^16.11.0",
     "wonka": "^6.3.5"
   },
   "peerDependencies": {
@@ -70,5 +70,5 @@
       "optional": false
     }
   },
-  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+  "packageManager": "pnpm@10.34.9"
 }
