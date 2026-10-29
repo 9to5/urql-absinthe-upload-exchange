@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: "22.23.4"
 
+      - name: Update npm for trusted publishing
+        run: npm install -g npm@11
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
@@ -37,5 +40,4 @@ jobs:
       - name: Run Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm exec semantic-release
