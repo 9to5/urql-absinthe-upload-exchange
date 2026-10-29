@@ -1,10 +1,3 @@
-## [2.0.1](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v2.0.0...v2.0.1) (2026-10-29)
-
-
-### Bug Fixes
-
-* **deps:** use the project's own @urql/core and graphql, update tooling ([f4330d3](https://github.com/9to5/urql-absinthe-upload-exchange/commit/f4330d3f0c803cae6a1f41396066530b27f67be3))
-
 # [2.0.0](https://github.com/9to5/urql-absinthe-upload-exchange/compare/v1.3.0...v2.0.0) (2025-04-28)
 
 
